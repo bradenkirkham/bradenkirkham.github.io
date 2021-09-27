@@ -1,0 +1,23 @@
+body{
+  background-color: #000000;
+}
+p{
+  color: #41FF00;
+  font-style: italic;
+}
+h1{
+  color: #41FF00;
+}
+h2{
+  color: #41FF00;
+  font-stlye: italic;
+}
+li{
+  color: #41FF00;
+}
+ol{
+ font-weight: bold;
+}
+ul{
+ font-style: italic;
+}
