@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".userView.FragProfile">
+
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.249">
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodySmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:text="Gender:"
+                android:textSize="20sp" />
+
+            <com.google.android.material.button.MaterialButtonToggleGroup
+                android:id="@+id/genderToggleSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true">
+
+                <Button
+                    android:id="@+id/male_toggleBtn"
+                    style="@style/materialButtonToggleGroup_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="male"
+
+                    app:icon="@drawable/ic_man" />
+
+                <Button
+                    android:id="@+id/female_toggleBtn"
+                    style="@style/materialButtonToggleGroup_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="female"
+
+                    app:icon="@drawable/ic_female" />
+
+            </com.google.android.material.button.MaterialButtonToggleGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="372dp"
+            android:layout_height="314dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/Done"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            tools:ignore="MissingConstraints">
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:stretchColumns="*">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Age:" />
+
+                    <TextView
+                        android:id="@+id/ageView"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:hint="0" />
+
+                    <SeekBar
+                        android:id="@+id/ageSeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Weight:" />
+
+                    <TextView
+                        android:id="@+id/weightView"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:hint="30" />
+
+                    <SeekBar
+                        android:id="@+id/weightSeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Height: " />
+
+                    <TextView
+                        android:id="@+id/heightView"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:hint="50" />
+
+                    <SeekBar
+                        android:id="@+id/heightSeek"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:text="Physical Activity:" />
+
+
+                    <TextView
+                        android:id="@+id/activityView"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Activity Level" />
+
+
+                    <SeekBar
+                        android:id="@+id/activitySeek"
+                        style="@style/Widget.AppCompat.SeekBar.Discrete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:max="5"
+                        android:progress="0" />
+
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.04000002">
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/photoFlotingbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_camera"
+
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/profileViewer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.705" />
+
+            <ImageView
+                android:id="@+id/profileViewer"
+                android:layout_width="114dp"
+                android:layout_height="119dp"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.134"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.026" />
+
+
+        </RelativeLayout>
+
+        <!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+        <!--        android:id="@+id/photoFlotingbtn"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:src="@drawable/ic_camera"-->
+        <!--        app:layout_constraintBottom_toTopOf="@+id/linearLayout"-->
+        <!--        app:layout_constraintEnd_toStartOf="@+id/userName"-->
+        <!--        app:layout_constraintHorizontal_bias="0.0"-->
+        <!--        app:layout_constraintStart_toEndOf="@+id/profileViewer"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintVertical_bias="0.705" />-->
+
+        <!--    <ImageView-->
+        <!--        android:id="@+id/profileViewer"-->
+        <!--        android:layout_width="114dp"-->
+        <!--        android:layout_height="119dp"-->
+        <!--        android:layout_centerInParent="true"-->
+        <!--        android:scaleType="centerCrop"-->
+        <!--        android:src="@mipmap/ic_launcher"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintHorizontal_bias="0.134"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toTopOf="parent"-->
+        <!--        app:layout_constraintVertical_bias="0.026" />-->
+
+        <Button
+            android:id="@+id/Done"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            android:text="Done"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.331"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.867" />
+
+        <Button
+            android:id="@+id/download"
+            android:layout_width="105dp"
+            android:layout_height="35dp"
+            android:text="Restore"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.708"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.867" />
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Type your name!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.911"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.131" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

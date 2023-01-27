@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/weather_background"
+    tools:context=".frag_weather">
+
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="327dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.544" />
+
+    <LinearLayout
+        android:id="@+id/currentWeatherViewFirst"
+        android:layout_width="280dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="230dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/optionalWeatherInfroView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/currentWeatherImageview"
+            android:layout_width="140dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/currentWeatherText"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="Cloudy"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/currentTemperature"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="100 c"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/optionalWeatherInfroView"
+        android:layout_width="390dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentWeatherViewFirst">
+
+
+        <LinearLayout
+            android:id="@+id/WindLinearLayout"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/currentWindimage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic__wind"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/currentWindText"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="100 c"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/humidityLinearLayout"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/currenthumidityimage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic__humidity"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/currenthumidityText"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="100 c"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pressureLinearLayout"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/currentpressureimage"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:src="@drawable/ic_pressure_meter"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+            <TextView
+                android:id="@+id/currentpressuretext"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="1dp"
+                android:gravity="center"
+                android:text="100 c"
+                android:textAlignment="center"
+                android:textSize="10pt" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

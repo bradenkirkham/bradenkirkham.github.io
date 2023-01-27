@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: black; font-family: 'Andale Mono'; color: #28FE14; box-sizing: border-box;">
+
+<!--
+<div class = "floating" style="position: center; top: 50px; left: 50px; border-color: #28FE14; border-width: thin; border-style: solid" > did this work?</div>
+-->
+<div class="form" style="border-width: 1px; border-color: #28FE14; border-style: solid; height: 200px; width: 500px" >
+    <h1>Log-in</h1>
+
+    <br />
+
+    <div class="floating" style="border-width: 1px;">
+        <input id="input_username" class="floating__input" name="username" type="text" placeholder="Username" style="background: black; color: #28FE14; padding: .25rem; border: #28FE14 1px solid" />
+        <label for="input_username" class="floating__label" data-content="Username">
+            <span class="hidden--visually">Username</span>
+        </label>
+    </div>
+
+    <div class="floating">
+        <input id="input_roomName" class="floating__input" name="Room Name" type="text" placeholder="Room Name" style="background-color: black; color: #28FE14; padding: .25rem; border: #28FE14 1px solid" />
+        <label for="input_roomName" class="floating__label" data-content="Password"><span class="hidden--visually">Room Name</span></label>
+    </div>
+
+    <button class="button" id="log_in_button" style="background-color: black; color: #28FE14">Log in</button>
+</div>
+<div id="message_box" style="border-style: solid; border-color: #28FE14; border-width: 1px; height: 500px; width: 500px; overflow: auto; color: #28FE14">
+</div>
+
+
+
+<div style="border-width: 1px; border-color: #28FE14; border-style: solid; width: 500px; display: flex; ">
+
+    <input placeholder="text message" id="userMessage" type="text" style="background-color: black; flex: 0 0 80%; padding: .25rem; color: #28FE14"/>
+    <div style="flex: 0 0 20%; display: flex; justify-content: center; align-items: center; padding: .25rem;">
+        <button class="button" id="message_button" style="color: #28FE14; background-color: black" > Send </button>
+    </div>
+</div>
+
+<script type="text/javascript" src="chatAPP.js"></script>
+</body>
+</html>
