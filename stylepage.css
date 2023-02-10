@@ -1,5 +1,5 @@
 body{
-  background-color: #ffffff;
+  background-color: #808080;
 }
 p{
   color: #000000;
@@ -14,8 +14,8 @@ li{
   color: #000000;
 }
 ol{
- font-weight: bold;
+  font-weight: bold;
 }
 ul{
- font-style: italic;
+  font-style: italic;
 }
