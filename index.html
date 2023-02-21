@@ -3,48 +3,89 @@
   <head>
     <link rel="stylesheet" type="text/css" href="stylepage.css">
     <meta charset="utf-8">
-    <title> Practice! </title>
+    
+    <title> Projects </title>
   </head>
   <body>
-    <h4> Job Analyzer </h4>
+
+    <h2>Project Page</h2>
+    <!-- <p>
+      I made this site to host summaries of my projects and links to their code. Click the arrows below for more.
+    </p> -->
+
+
+    <h4 id = "jobAnalyzerHeader"> Job Analyzer <i id = "jobArrow" class="arrow right"></i></h4>
+    <div id = "jobAnalyzerDiv" style="display: none;">
     <p> 
-      A web app created with Flask in Python that attempts to find keywords in a job posting.  Users input the URL of the job posting they are interested in, then the app scrapes it, stores the data, calculates the TF-IDF, and then displays the results. TF-IDF (term frequency-inverse document frequency) is the algorithm the app uses to find keywords.  A web scraper made in python with the Beautiful Soup library compiled the initial corpus of data used to train the algorithm.  MongoDB was used to store all data.   
+    A web app created with Flask in Python that attempts to find keywords in a job posting.  Users input the URL of the job posting they are interested in, then the app scrapes it, stores the data, calculates the TF-IDF, and then displays the results. TF-IDF (term frequency-inverse document frequency) is the algorithm the app uses to find keywords.  A web scraper made in python with the Beautiful Soup library compiled the initial corpus of data used to train the algorithm.  MongoDB was used to store all data.   
     </p>
     <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> Chat Server </h4>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "chatServerHeader"> Chat Server <i id = "chatArrow" class="arrow right"></i></h4>
+    <div id = "chatServerDiv" style="display: none;">
     <p> 
-      Used Java to create a server that would host users in rooms, track and save all user messages in a room, and send messages to all users.  It would also send all saved messages to new users who joined.  HTML was used to make the front-end interface and javascript was used to update the webpage dynamically.
+    Used Java to create a server that would host users in rooms, track and save all user messages in a room, and send messages to all users.  It would also send all saved messages to new users who joined.  HTML was used to make the front-end interface and javascript was used to update the webpage dynamically.
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> DNS resolver </h4>
+    <a href="https://www.google.com/"> Chat Server Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "DNSResolverHeader"> DNS Resolver <i id = "DNSArrow" class="arrow right"></i></h4>
+    <div id = "DNSResolverDiv" style="display: none;">
     <p> 
-      Used Java to create a program that would decode a user’s domain name request, and save the request.  Then send the request to google for an answer.  It would then cache google’s answer for future requests and formulate a response packet and send that back to the user.  
+    Used Java to create a program that would decode a user’s domain name request, and save the request.  Then send the request to google for an answer.  It would then cache google’s answer for future requests and formulate a response packet and send that back to the user.  
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> Sharks and Minnows </h4>
+    <a href="https://www.google.com/"> DNS Resolver Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "sharksAndMinnowsHeader"> Sharks and Minnows <i id = "sharksArrow" class="arrow right"></i></h4>
+    <div id = "sharksAndMinnowsDiv" style="display: none;">
     <p> 
-      A team project to make a game of tag coded in c++.  A user class tracks the mouse’s position and continuously redraws the user sprite in that position.  An enemy class tracks the position of the mouse and updates its position with increased speed to move closer to the mouse.  The game ends when a shark sprite touches the user sprite and an end screen displays how long you survived.   
+    A team project to make a game of tag coded in c++.  A user class tracks the mouse’s position and continuously redraws the user sprite in that position.  An enemy class tracks the position of the mouse and updates its position with increased speed to move closer to the mouse.  The game ends when a shark sprite touches the user sprite and an end screen displays how long you survived.   
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> Pacman maze solver </h4>
+    <a href="https://www.google.com/"> Sharks and Minnows Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "mazeHeader"> Pacman Maze Solver <i id = "mazeArrow" class="arrow right"></i></h4>
+    <div id = "mazeDiv" style="display: none;">
     <p> 
-      A Java program that reads in a maze in the form of a .txt file.  After finding the start and end points a breadth-first search finds the shortest path from start point to endpoint.  
+    A Java program that reads in a maze in the form of a .txt file.  After finding the start and end points a breadth-first search finds the shortest path from start point to endpoint.  
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> MSDscript </h4>
+    <a href="https://www.google.com/"> Pacman Maze Solver Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "MSDScriptHeader"> MSDscript <i id = "MSDArrow" class="arrow right"></i></h4>
+    <div id = "MSDScriptDiv" style="display: none;">
     <p> 
-      A baseline scripting language programmed in C++ capable of interpreting and solving simple expressions. It can handle Addition, Multiplication, Comparison, if/then expressions, let expressions (e.g. (x = 5 in (x + 5))), and functions (e.g. (f(x) = x+5)). This project includes automated and randomly generated tests.  It also includes extensive unit testing.   
+    A baseline scripting language programmed in C++ capable of interpreting and solving simple expressions. It can handle Addition, Multiplication, Comparison, if/then expressions, let expressions (e.g. (x = 5 in (x + 5))), and functions (e.g. (f(x) = x+5)). This project includes automated and randomly generated tests.  It also includes extensive unit testing.   
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4>  Lifestyle app </h4>
+    <a href="https://www.google.com/"> MSDscript Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "lifeStyleHeader">  Lifestyle App <i id = "lifeArrow" class="arrow right"></i></h4>
+    <div id = "lifeStyleDiv" style="display: none;">
     <p> 
-      A lifestyle app made using android studio.  The purpose of the app is to help the user track their health and includes a BMR calculator, a step counter, a user profile, location tracking, weather API, national parks API, and google maps API.  The project is coded in Kotlin and XML. AWS S3, Android’s room library, and Amplify were all used to track and store user data.   
+    A lifestyle app made using android studio.  The purpose of the app is to help the user track their health and includes a BMR calculator, a step counter, a user profile, location tracking, weather API, national parks API, and google maps API.  The project is coded in Kotlin and XML. AWS S3, Android’s room library, and Amplify were all used to track and store user data.   
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
-    <h4> Learning management system </h4>
+    <a href="https://www.google.com/"> Lifestyle App Code </a>
+    </div>
+
+    <!-- <hr> -->
+    <h4 id = "LMSHeader"> Learning Management System <i id = "LMSArrow" class="arrow right"></i></h4>
+    <div id = "LMSDiv" style="display: none;">
     <p> 
-      A team project in which my partner and I set up the backend AWS database and controllers for a canvas-like program.  The controllers were set up using C# and all queries were made using SQL. We designed the database, which included creating an ER diagram for it. The project included Tables for Students, Professors, Administrators, Departments, Grades, Assignment Submissions, etc.   
+    A team project in which my partner and I set up the backend AWS database and controllers for a canvas-like program.  The controllers were set up using C# and all queries were made using SQL. We designed the database, which included creating an ER diagram for it. The project included Tables for Students, Professors, Administrators, Departments, Grades, Assignment Submissions, etc.   
     </p>
-    <a href="https://www.google.com/"> Job Analyzer Code </a>
+    <a href="https://www.google.com/"> Learning Management System Code </a>
+    </div>
+
+    
+    <script src = "siteScript.js"></script>
   </body>
 </html>
