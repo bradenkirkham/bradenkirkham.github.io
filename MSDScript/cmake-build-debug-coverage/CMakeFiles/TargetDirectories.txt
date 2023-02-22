@@ -1,0 +1,4 @@
+/Users/bkirkham/MSD-Script/cmake-build-debug-coverage/CMakeFiles/rebuild_cache.dir
+/Users/bkirkham/MSD-Script/cmake-build-debug-coverage/CMakeFiles/edit_cache.dir
+/Users/bkirkham/MSD-Script/cmake-build-debug-coverage/CMakeFiles/Test.dir
+/Users/bkirkham/MSD-Script/cmake-build-debug-coverage/CMakeFiles/MSD_Script.dir
