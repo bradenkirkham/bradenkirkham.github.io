@@ -9,7 +9,7 @@ class NationalParkAPI {
     //https://developer.nps.gov/api/v1/visitorcenters?limit=686&api_key=sXXj0N3N0JhZWuRprys6ghdPsdtod6tnFHSkr20G
     companion object{
         val DOMAIN = "https://developer.nps.gov/api/v1/"
-        val API_KEY ="sXXj0N3N0JhZWuRprys6ghdPsdtod6tnFHSkr20G"
+        val API_KEY =""
     }
 
 

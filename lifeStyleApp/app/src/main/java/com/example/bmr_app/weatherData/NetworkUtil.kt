@@ -11,7 +11,7 @@ object NetworkUtil {
     private const val Base_URL = "https://api.openweathermap.org/data/2.5/weather?lat="
     private const val lon = "&lon="
     private const val APPIDQUERY = "&appid="
-    private const val app_id = "afc2ab2b714dc3f42b36d2d939c39df0"
+    private const val app_id = ""
 
     fun buildURLFromString(latitude: Double, longitude: Double): URL? {
         var myURL: URL? = null
